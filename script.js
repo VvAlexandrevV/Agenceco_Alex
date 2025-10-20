@@ -7,4 +7,4 @@ if(age>= 18) {
 }
 
 
-//ne pas tenir compte e code
+//ne pas tenir compte de ce code
