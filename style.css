@@ -432,13 +432,212 @@ body {
   color: #183a43;
 }
 
-.conteneur_cadre img {
-  border-radius: 50%;
+.cercle_icone {
   border: #183a43 solid;
-  width: 60px;
-  height: 60px;
-  margin-bottom: 10px;
+  border-radius: 50%;
+  padding: 30px;
 }
+
+/*===NOTRE GALERIE===*/
+
+.titre_galerie {
+  color: #469b61;
+  font-weight: 600;
+  font-size: 53px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.txt_galerie {
+  color: #000000;
+  font-size: 29px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.photos_galerie {
+ display: flex;
+ justify-content: center;
+ margin-top: 5%;
+}
+
+.photos_galerie img {
+  border-radius: 20px;
+}
+
+/*==boutons==*/
+.boutons_galerie {
+  font-weight: 275;
+  font-size: 43px;
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  gap: 59%;
+  object-fit: cover;
+}
+
+.boutons_galerie_G,
+.boutons_galerie_D, button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  font-size: 43px;
+  font-weight: 275;
+  width: 60px;/*redimentionne le cercle*/
+  aspect-ratio: 1;/*redimentionne une image rectangulaire en carré parfait*/
+  }
+
+  .boutons_galerie_G,
+  .boutons_galerie_D,
+    buton:hover {
+    background-color: #000000;
+    color: #c8ff00;
+    margin-bottom: 5%;
+  }
+
+  /*FOOTER PART1*/
+
+  .footer_part1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+    background-color: #183a43;
+    color: #f4f6f7;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .content,
+  .informations,
+  .services,
+  .aide {
+    font-size: 23px;
+    font-weight: 500;
+    padding-bottom: 6%;
+  }
+
+
+.ensemble {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 1%;
+}
+
+.ligne_tel,
+.ligne_adresse {
+  display: flex;
+  white-space: nowrap;
+  margin-right: 5%;
+  gap: 10px;
+
+}
+
+.icone_tel img, 
+.icone_GPS img {
+  width: 70px;
+  display: block;
+}
+
+.txt_tel,
+.txt_gps {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+
+ /*FOOTER PART2*/
+
+ .footer_part2 {
+ background-color: #0c2227;
+ color: #ffffff;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ gap: 24%;
+
+}
+
+.copyright {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 70px;
+}
+
+.me_connecter button {
+    font-weight: 500;
+    height: 40px;
+    width: 166px;
+    background-color: #c8ff00;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  
+.me_connecter button:hover {
+    background-color: #ffaa00;
+    color: #c8ff00;
+  }
+
+.icones_reseau {
+  display: flex;
+  gap: 50px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.icones_reseau div { /* conteneur de chaque icône */
+  border: 2px solid #ffffff;
+  border-radius: 10%;
+  padding: 10px;             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;               
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.icones_reseau img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+  
+ 
+
+
+
+
+  
+
+
+
+
+
+
+  
 
 
 
