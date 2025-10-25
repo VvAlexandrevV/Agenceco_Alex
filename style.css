@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-/* RESET */
 * {
   /* le * cible tout le document */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* GLOBAL */
@@ -14,6 +12,7 @@ body {
   background-color: white;
   color: #000000;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* HEADER */
@@ -52,10 +51,10 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 40px;
+  gap: 2%;
   height: 100px;
   width: 100%;
-  margin: 0;
+  margin-right: 5%;
   position: relative;
 }
 
@@ -64,14 +63,17 @@ body {
 }
 
 /* BANNIÈRE */
+
 .banniere {
   background: url(images/banniere_feuilles.jpg) no-repeat bottom;
   background-size: cover;
   height: 802px;
+  width: 100%;
   display: flex;
   justify-content: flex-end; /* place le texte à droite */
   align-items: flex-end;     /* place le texte en bas */
-  padding: 60px 80px;        /* espace depuis le bord bas et droit */
+  padding: 60px 80px;/* espace depuis le bord bas et droit */
+  overflow-x: hidden;        
 }
 
 .banniere-text {
@@ -79,6 +81,8 @@ body {
   flex-direction: column;   /* empile h2 au-dessus de h1 */
   align-items: flex-end;
   text-align: right;
+  max-width: 100%;
+  margin-right: 6%;
 }
 
 .banniere-text h2 {
@@ -374,11 +378,20 @@ body {
 }
 
 /* === IMAGE === */
+.a_propos_de_nous {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  gap: 3%;
+  flex-wrap: wrap;
+  margin: 5%;
+  align-items: stretch;
+}
+
 .img_team {
-  height: 401px;
-  width: 601.5px;
-  margin-top: 5%;
-  margin-left: 5%;
+  width: 45%;
+  height: auto;   
 }
 
 .img_team img {
@@ -391,15 +404,14 @@ body {
 .cadre_droit {
   border: 2px solid #000000;
   display: flex;
-  flex-direction: column;  /* empile les éléments à la verticale */
   justify-content: center;
-  text-align: center;      /* centre le texte */
-  margin-top: 5%;
-  margin-right: 5%;
-  width: 604px;
-  height: 403px;
+  flex-direction: column;  /* empile les éléments à la verticale */
+  text-align: center;      /* centre le texte*/
+  width: 45%;
+  height: auto;
   border-radius: 2%;
   padding: 20px;
+  
 }
 
 /* === TITRE ET TEXTE === */
@@ -474,7 +486,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 1%;
-  gap: 59%;
+  gap: 30%;
   object-fit: cover;
 }
 
@@ -489,11 +501,11 @@ body {
   font-weight: 275;
   width: 60px;/*redimentionne le cercle*/
   aspect-ratio: 1;/*redimentionne une image rectangulaire en carré parfait*/
+  margin-bottom: 4%;
   }
 
-  .boutons_galerie_G,
-  .boutons_galerie_D,
-    buton:hover {
+  .boutons_galerie_G button:hover,
+  .boutons_galerie_D button:hover {
     background-color: #000000;
     color: #c8ff00;
     margin-bottom: 5%;
@@ -616,6 +628,293 @@ body {
 }
 
 
+                          /*****************************************___CONNEXION___***************************************************/
+/*PAGE2 CONNEXION*/
+
+.titre_connexion {
+  color: #469b61;
+  font-weight: 600;
+  font-size: 53px;
+  margin-top: 130px;
+  display: flex;
+  justify-content: center;
+  }
+  
+  .txt_connexion {
+    font-weight: 500;
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .formulaire_log {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+
+  #champ_email_log,
+  #mot_de_pass {
+    width: 655px;
+    height: 66px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #868686;
+    border-radius: 10px;
+    padding-left: 30px;
+    border: #868686 solid 3px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.25);
+  }
+
+  #champ_email_log {
+    margin-bottom: 25px;
+  }
+
+  /*Bouton connexion P2*/
+  .me_connecter2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .me_connecter2 button {
+    font-weight: 500;
+    height: 40px;
+    width: 166px;
+    background-color: #c8ff00;
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  
+.me_connecter2 button:hover {
+    background-color: #ffaa00;
+    color: #c8ff00;
+  }
+
+
+.footer_part2_p2 {
+ background-color: #0c2227;
+ color: #ffffff;
+ width: 100%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between; /*pousse les icone a droite et le copyright a gauche*/
+ gap: 24%;
+
+}
+
+.copyright_p2 {
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 70px;
+  margin-left: 15%;
+  
+}
+
+
+.icones_reseau_p2 {
+  display: flex;
+  gap: 50px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  margin-right: 15%;
+}
+
+.icones_reseau_p2 div { /* conteneur de chaque icône */
+  border: 2px solid #ffffff;
+  border-radius: 10%;
+  padding: 10px;             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;               
+  height: 40px;
+  margin-bottom: 40px;
+}
+
+.icones_reseau_p2 img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+/*______________________________________________________NOS ACTUALITES_______________________________________*/
+
+.titre_actu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20%;
+  color: #469b61;
+  font-weight: 600;
+  font-size: 53px;
+  padding-top: 20px;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+.sous_titre_actu {
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 25%;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 5%;
+  background-color: #c8ff00;
+  border-radius: 10px;
+}
+
+.titre_block1_2,
+.titre_block2_2,
+.titre_block3_2,
+.titre_block4_2 {
+  font-weight: 500;
+  font-size: 30px;
+  display: flex;
+  justify-content: start;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.txt_block1_2,
+.txt_block2_2,
+.txt_block3_2,
+.txt_block4_2 {
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white; 
+}
+
+.date_actu {
+position: absolute; /*avec absolute je place mon texte exactement la ou je veux dans mon cadre qui lui est relative*/
+font-weight: 500;
+font-size: 20px;
+color: white;
+display: flex;
+margin-bottom: -1%;
+bottom: 60px;
+}
+
+.block1_2,
+.block2_2,
+.block3_2,
+.block4_2 {
+  position:relative; /* relative dit que mon cadre est la reference et donc, avec absolute je place precisement les element dedans ex:bottom 20px ect*/
+  background-color: #469b61;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+
+/*___BOUTTONS ACTU__*/
+
+.btn_actualites {
+  display: flex;
+  gap:1%;
+  justify-content: end;
+  
+}
+
+.btn_modifier button {
+    font-weight: 700;
+    height: 29px;
+    width: 138px;
+    background-color: rgba(255, 170, 0,1);
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+
+  .btn_supprimer button {
+    font-weight: 700;
+    height: 29px;
+    width: 138px;
+    background-color: rgba(255, 0, 0,1);
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    color: #ffffff;
+  }
+
+  
+.btn_modifier button:hover,
+.btn_supprimer button:hover {
+    background-color: #ffaa00;
+    color: #c8ff00;
+  }
+
+/*_______________________________________________________RESPONSIVE___________________________________________*/
+
+@media screen and (max-width: 1000px) {
+  
+
+  
+ 
+  .notre_equipe p {
+  font-weight: 500;
+  font-size: 29px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+  .photo_equipe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 300px;
+  padding-top: 20px;
+}
+.client {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.icones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 300px;
+  font-size: 43px;
+  font-weight: 600;
+  text-align: center;
+}
+.titre_dernieres_actualites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+}
+
+
+
+  
 
 
 
