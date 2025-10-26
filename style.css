@@ -111,7 +111,7 @@ body {
 
 /* NOTRE ÉQUIPE */
 .notre_equipe h2 {
-  padding: 10px;
+  padding: 3%;
   font-weight: 600;
   font-size: 53px;
   line-height: 100%;
@@ -130,8 +130,8 @@ body {
 .photo_equipe {
   display: flex;
   justify-content: center;
-  gap: 300px;
-  padding-top: 20px;
+  gap: 30%;
+  padding-top: 2%;
 }
 
 .FemmeRouge {
@@ -616,8 +616,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;               
-  height: 40px;
+  width: 5%; 
+  height: 13%;              
   margin-bottom: 40px;
 }
 
@@ -732,8 +732,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;               
-  height: 40px;
+  width: 5%;               
+  height: 13%;
   margin-bottom: 40px;
 }
 
@@ -793,7 +793,8 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: white; 
+  color: white;
+  
 }
 
 .date_actu {
@@ -802,8 +803,7 @@ font-weight: 500;
 font-size: 20px;
 color: white;
 display: flex;
-margin-bottom: -1%;
-bottom: 60px;
+bottom: 15%;
 }
 
 .block1_2,
@@ -864,6 +864,143 @@ bottom: 60px;
     background-color: #ffaa00;
     color: #c8ff00;
   }
+
+/*______________________________________________________AJOUTER UNE ACTUALITE P3______________________________*/
+.titre_add_actu2 {
+  display: flex;
+  justify-content: center;
+  color: #469b61;
+  font-weight: 600;
+  font-size: 53px;
+  margin-top: 10%;
+}
+
+.form_add_actu2 input::placeholder { /* input::placeholder pour cibler le texte dans le champ*/
+  color: #ffffff;
+}
+
+#champ_description::placeholder,
+#champ_contenu::placeholder {
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+
+.form_add_actu {
+  display: flex;
+  justify-content: center;
+  background-color:#183a43;
+  width: 87%;
+  height: 30%;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  margin: auto;
+  margin-bottom: 10%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+#champ_titre_actu2,
+#champ_description,
+#champ_contenu {
+  background-color: transparent;
+  border: #ffffff solid;
+  border-radius: 10px;
+  width: 1207px;
+  margin-top: 5%;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+#champ_titre_actu2 {
+  height: 74px;
+}
+
+#champ_description,
+#champ_contenu {
+  height: 123px;
+}
+
+/*BOUTTON ACTU*/
+.bouton_save {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_save button {
+  font-weight: 500;
+  height: 55.36px;
+  width: 211px;
+  background-color: #c8ff00;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  }
+
+  
+.bouton_save button:hover {
+    background-color: #ffaa00;
+    color: #c8ff00;
+  }
+
+  /*__________________________________________________MODIFIER MON ACTUALITE____________________________________*/
+
+.bouton_maj_sup {
+  display: flex;
+  justify-content: center;
+  gap: 15%;
+  
+}
+
+.bouton_maj button {
+  font-weight: 500;
+  height: 55.36px;
+  width: 211px;
+  background-color: #c8ff00;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  }
+
+  
+.bouton_maj button:hover {
+    background-color: #ffaa00;
+    color: #c8ff00;
+  }
+
+.bouton_supprimer button {
+  font-weight: 500;
+  height: 55.36px;
+  width: 211px;
+  color:#ffffff;
+  background-color: #ff0000;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  }
+
+  
+.bouton_supprimer button:hover {
+    background-color: #ffaa00;
+    color: #c8ff00;
+  }
+
+
+
+
+
+
+
 
 /*_______________________________________________________RESPONSIVE___________________________________________*/
 

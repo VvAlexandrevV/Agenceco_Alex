@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AgencEco - connexion</title>
+  <title>AgencEco - Ajouter une actualité</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,34 +20,36 @@
       <a href="actualites">Actualités</a>
     </nav>
   </header>
-  <!-- Formulaire LOG -->
-    <section class="connexion">
-        <div class="titre_connexion">
-            <h1>Connexion</h1>
-        </div>
-        <div class="txt_connexion">
-            <p>Pour voir les actualités, merci de vous connecter</p>
-        </div>
-        <div class="formulaire_log">
-            <form id="form_log" action="pagex" method="post">
+
+  <section class="titre_form_add_actu">
+    <div class="titre_add_actu2">
+        <h2>Ajouter une actualité</h2>
+    </div>
+  </section>
+
+  <section class="form_add_actu2">
+    <div class="cadre_form">
+        <div class="form_add_actu">
+            <form id="ajouter_actu" action="pagex" method="post">
                 <div>
-                   <input type="email" name="email" id="champ_email_log" placeholder="E-mail">
+                    <input type="text" name="titre_de_mon_actualite" id="champ_titre_actu2" placeholder="Le titre de mon actualité">   
                 </div>
                 <div>
-                    <input type="password" name="mot_de_passe" id="mot_de_pass" placeholder="Mot de passe">
+                    <textarea type="text" name="description" id="champ_description" placeholder="Sa description"></textarea>
                 </div>
-                <div class="me_connecter2">
-                    <button type="submit">Me connecter</button>
+                <div>
+                    <textarea type="text" name="son_contenu" id="champ_contenu" placeholder="Son contenu"></textarea>
                 </div>
-            </div>
+    <!-- boutton sauvegarder -->
 
+                <div class="bouton_save">
+                    <button type="submit">Sauvegarder</button>
+                </div>
+            </form>   
+        </div>
+    </div>
 
-            </form> 
-    </section>
-    
-    <!-- FOOTER CONNEXION -->
-
-    <section class="footer_part1">
+     <section class="footer_part1">
   <!-- C1 -->
     <div class="txt_colonne1">
       <div class="content">
@@ -135,7 +137,9 @@
     
 
 
-  </section>   
+  </section>           
     
-  </body>
-</html>
+</body>
+</html>      
+    
+ 
