@@ -26,13 +26,19 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  z-index: 1000;
 }
 
 .logo {
   font-size: 43px;
   font-weight: 700;
   line-height: 100%;
+}
+
+.burger {
+  display: none;
+}
+.close-btn {
+  display: none;
 }
 
 .nav a {
@@ -55,7 +61,6 @@ body {
   height: 100px;
   width: 100%;
   margin-right: 5%;
-  position: relative;
 }
 
 .nav a:hover {
@@ -125,6 +130,7 @@ body {
   font-size: 29px;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .photo_equipe {
@@ -366,18 +372,19 @@ body {
     font-size: 17px;
   }
 
-  .boutton button:hover {
+.boutton button:hover {
     background-color: #ffaa00;
     color: #c8ff00;
   }
 
-  .a_propos_de_nous {
+/*A PROPOS DE NOUS*/
+.a_propos_de_nous {
   display: flex;
   justify-content: space-between; /* image à gauche, cadre à droite */
   align-items: center;
 }
 
-/* === IMAGE === */
+/* === IMAGE TEAM === */
 .a_propos_de_nous {
   display: flex;
   justify-content: center;
@@ -451,7 +458,6 @@ body {
 }
 
 /*===NOTRE GALERIE===*/
-
 .titre_galerie {
   color: #469b61;
   font-weight: 600;
@@ -486,7 +492,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 1%;
-  gap: 30%;
+  gap: 1000px;
   object-fit: cover;
 }
 
@@ -512,7 +518,6 @@ body {
   }
 
   /*FOOTER PART1*/
-
   .footer_part1 {
     display: flex;
     flex-direction: row;
@@ -565,8 +570,7 @@ body {
 }
 
  /*FOOTER PART2*/
-
- .footer_part2 {
+.footer_part2 {
  background-color: #0c2227;
  color: #ffffff;
  width: 100%;
@@ -596,7 +600,6 @@ body {
     margin-bottom: 40px;
   }
 
-  
 .me_connecter button:hover {
     background-color: #ffaa00;
     color: #c8ff00;
@@ -628,8 +631,9 @@ body {
 }
 
 
-                          /*****************************************___CONNEXION___***************************************************/
-/*PAGE2 CONNEXION*/
+
+
+/**************************************************************************___PAGE 2 CONNEXION___***********************************************************************/
 
 .titre_connexion {
   color: #469b61;
@@ -654,13 +658,18 @@ body {
     margin-bottom: 15%;
   }
 
+  #champ_email_log input::placeholder,
+  #mot_de_pass input::placeholder {
+    color: #868686;
+    font-family: "poppins" sans-serif;
+  }
+
   #champ_email_log,
   #mot_de_pass {
     width: 655px;
     height: 66px;
     font-size: 20px;
     font-weight: 500;
-    color: #868686;
     border-radius: 10px;
     padding-left: 30px;
     border: #868686 solid 3px;
@@ -743,7 +752,11 @@ body {
   object-fit: contain;
 }
 
-/*______________________________________________________NOS ACTUALITES_______________________________________*/
+
+
+
+
+/**********************************************************************___PAGE 3 ACTUALITES___(cadres verts)***************************************************************/
 
 .titre_actu {
   display: flex;
@@ -758,17 +771,24 @@ body {
   border-radius: 10px;
 }
 
-.sous_titre_actu {
+.btn_add_actu button {
   display:flex;
   text-align: center;
   justify-content: center;
   margin: auto;
-  width: 25%;
+  width: 361px;
+  height: 63px;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 5%;
   background-color: #c8ff00;
   border-radius: 10px;
+  border: transparent;
+}
+
+.btn_add_actu button:hover {
+  background-color: #ffaa00;
+  color: #c8ff00;
 }
 
 .titre_block1_2,
@@ -822,7 +842,6 @@ bottom: 15%;
 
 
 /*___BOUTTONS ACTU__*/
-
 .btn_actualites {
   display: flex;
   gap:1%;
@@ -865,7 +884,11 @@ bottom: 15%;
     color: #c8ff00;
   }
 
-/*______________________________________________________AJOUTER UNE ACTUALITE P3______________________________*/
+
+
+
+
+/****************************************************************_____PAGE 4 AJOUTER UNE ACTUALITE ____*****************************************************/
 .titre_add_actu2 {
   display: flex;
   justify-content: center;
@@ -877,12 +900,14 @@ bottom: 15%;
 
 .form_add_actu2 input::placeholder { /* input::placeholder pour cibler le texte dans le champ*/
   color: #ffffff;
+  font-family: "poppins", sans-serif;
 }
 
 #champ_description::placeholder,
 #champ_contenu::placeholder {
   color: #ffffff;
   padding-top: 20px;
+  font-family: "poppins", sans-serif;
 }
 
 
@@ -911,6 +936,7 @@ bottom: 15%;
   font-size: 20px;
   font-weight: 500;
   padding-left: 15px;
+  resize: none;
 }
 
 #champ_titre_actu2 {
@@ -947,13 +973,16 @@ bottom: 15%;
     color: #c8ff00;
   }
 
-  /*__________________________________________________MODIFIER MON ACTUALITE____________________________________*/
+
+
+
+
+/********************************************************************************_____PAGE 5 MODIFIER MON ACTUALITE_____************************************************************/
 
 .bouton_maj_sup {
   display: flex;
   justify-content: center;
   gap: 15%;
-  
 }
 
 .bouton_maj button {
@@ -997,104 +1026,421 @@ bottom: 15%;
 
 
 
+                                /*************************************************************______________************************************************/
+/*********************************************************************************************__RESPONSIVE__**************************************************************************/
+                                /*************************************************************______________************************************************/
 
 
+@media screen and (max-width: 1281px) {
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
 
+/*HEADER*/
 
-/*_______________________________________________________RESPONSIVE___________________________________________*/
+.header {
+  max-width: 100%;
+  width: 100%;
+  align-items:flex-start;
+}
 
-@media screen and (max-width: 1000px) {
-  
+/*********************BURGER******************/
+.burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  margin-top: 9px;
+}
+.burger span {
+  width: 25px;
+  height: 4px;
+  background-color: #255919;
+  margin: 3px;
+  border-radius: 20%;
+  border: 5px;
+  transition: height 3s ease;
+  z-index: 1000;
+}
+.nav {
+  display: flex; /*fait disparaitre la nav barre*/
+  flex-direction: column;
+  text-align: center;
+  width: 180px;
+  height: 0px;
+  gap: 20px;
+  margin-right: 60px;
+  margin-top: 4px;
+  transition: height 0.1s ease; /* vitesse du menu deroulant*/
+  overflow: hidden;
+  margin-top: 125px;
+  padding-bottom: 10px;
+  position: absolute;
+  right: -25px;
+  margin-top: 0;
+  background-color: #ffffff;
+  opacity: 1;
+  border: solid black 1px;
+  border-color: transparent;
+}
+.nav.open {
+  display: flex;
+  height: 245px;
+  opacity: 1;
+  border-color: black;
+  margin-right: 60px;
+  margin-top: 4px;
+}
 
-  
- 
-  .notre_equipe p {
+/* === CROIX DE FERMETURE === */
+.close-btn {
+  position: absolute;
+  top: -10px;               
+  right: -10px;           
+  background: transparent;
+  border: none;        
+  font-size: 40px;        
+  cursor: pointer;        
+  color: #255919; 
+  display: block; /*permet dafficher une element qui dans le non responsive est en display none*/
+  }
+/*FIN BURGER*/
+
+/*BANNIERE*/
+.banniere {
+  margin-top: 75px;
+  height: 70%;
+  max-width: 100%;
+  width: 100%;
+  position: static;
+}
+
+.banniere-text{
+  margin: auto;
+}
+
+.banniere-text h2,
+.banniere-text h1 {
+  width: 20%;
+  height: 20%; 
+  margin: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  max-width: 90%;
+  font-size: clamp(7vw, 1vw, 10vw); /* la taille s’adapte à l’écran */
+}
+
+/*NOTRE EQUIPE*/
+ .notre_equipe h2 {
+  margin: auto;
+  text-align: center;
+  font-size: clamp(7vw, 1vw, 10vw);
+}
+.icones {
+  gap:50px;
+}
+
+.notre_equipe p {
   font-weight: 500;
-  font-size: 29px;
+  font-size: 15px;
   display: flex;
   justify-content: center;
   text-align: center;
 }
+
   .photo_equipe {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 300px;
+  gap: 30px;
   padding-top: 20px;
 }
+
+/* CLIENTS SATISFAITS */
 .client {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
+
+.client {
+  background-color: #183a43;
+  margin-right: 0;
+  margin-top: 20px;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+
+/*NOS SERVICE*/
+.txt_services {
+  color: #469b61;
+  text-align: center;
+  padding-top: 10px;
+  font-size: clamp(7vw, 1vw, 10vw); /* scaling de la police 7vw=taille min 1vw=taille fluide dépend de la largeur de l’écran 10vw=taille max*/
+}
+
 .icones {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 300px;
-  font-size: 43px;
+  gap: 10%;
   font-weight: 600;
   text-align: center;
 }
+
+/*******************************************************DERNIERES ACTUALITES**********************************************/
 .titre_dernieres_actualites {
-  display: flex;
+  text-align: center;
+  font-size: clamp(6vw, 1vw, 9vw);
+  white-space: nowrap;
+  margin: auto;
+}
+
+.titre_block1,
+.titre_block2,
+.titre_block3 {
+text-align: center;
+}
+
+/* CONTACTEZ NOUS */
+.titre_contactez_nous {
+  font-size: 30px;
+  text-align: center;
+  font-size: clamp(7vw, 1vw, 10vw);
+  white-space: nowrap;
+}
+.champ,
+.formulaire{
   flex-direction: column;
+} 
+.champ {
+  width: 80vw; /* vw permet le scaling 100px=7vw environ*/
+}
+
+.boutton {
   justify-content: center;
-  
+  margin: auto;
+  margin-top: 5%;
+}  
+
+.txt_contact {
+  text-align: center;
+}
+
+/*A PROPOS DE NOUS*/
+.a_propos_de_nous{
+  justify-content: center;
+}
+
+.conteneur_cadre {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+}
+.img_team{
+  display: none;
 }
 
 
+/* GALERIE*/
+.titre_galerie {
+  font-size: 30px;
+  text-align: center;
+}
+
+.photos_galerie {
+  width: 100%;
+  height: 60vw;
+  max-width: 100%;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+
+.photos_galerie {
+  width: 100%;
+  overflow: hidden;
+}
+
+.boutons_galerie {
+  gap: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+.boutons_galerie_G,
+.boutons_galerie_D {
+  display: none;
+}
+
+
+/* FOOTER */
+.footer_part2,
+.footer_part2_p2 {
+  gap: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.conteneur_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr;
+}
+
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin: auto;
+}
+
+.txt_colonne3,
+.txt_colonne1 {
+  margin-left: 15%;
+}
+
+
+.conteneur_grid2 {
+  display: grid;
+  grid-template-columns: 0fr 1fr 0fr;
+  grid-template-rows: 0fr 1fr 0fr;
+}
+.fbox2 {
+  grid-column-start: 2;
+}
+.fbox3 {
+  grid-column-start: 2;
+  grid-row-start: 2 ;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.fbox1 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  margin-top: -70px;
+  margin-bottom: 5%;
+  font-size: 14px;
+}
+
+.fbox1,
+.fbox2,
+.fbox3 {
+  border-collapse: collapse;
+  justify-items: center;
+  
+}
+.icones_reseau div { /* conteneur de chaque icône */
+  width: 45px; 
+  height: 45px;
+  aspect-ratio: 1;
+  gap: 1%;
 }
 
 
 
+
+/********************************************************_____PAGE 2 CONNEXION_____*******************************************/
+.titre_connexion {
+  font-size: clamp(7vw, 1vw, 10vw);
+  }
   
+.txt_connexion {
+    text-align: center;
+  }
+
+  #champ_email_log,
+  #mot_de_pass {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 90%;
+  }
+
+
+
+/**********************************************************_____ PAGE 3 ACUALITES_____ ****************************************/
+.header {
+  z-index: 1000;
+}
+.titre_actu  {
+  margin-top: 30vw;
+  font-size: clamp(7vw, 1vw, 5vw);
+}
+
+.titre_block1_2,
+.titre_block2_2,
+.titre_block3_2,
+.titre_block4_2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn_actualites {
+  justify-content: center;
+  gap: 3%;
+}
+
+.date_actu {
+  display: none;
+} 
+
+
+
+/****************************************************************_____PAGE 4 AJOUTER UNE ACTUALITE ____*****************************************************/
+.titre_add_actu2 {
+  text-align: center;
+  font-size: clamp(7vw, 1vw, 5vw);
+  margin-top: 20%;
+}
+
+#champ_titre_actu2,
+#champ_description,
+#champ_contenu {
+  margin-left: 5%;
+  max-width: 90%;
+}
 
 
 
 
+/*************************************************************____PAGE 5 MODIFIER MON ACTUALITE____********************************************************/
+.bouton_maj_sup {
+  display: flex;
+  justify-items: center;
+  margin: auto;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.bouton_maj button {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
 
-
-
-  
- 
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-  
-
-    
-    
-
-
-
- 
-
-  
-  
-
-
-
-
-  
-
-
-
-
+.bouton_supprimer button {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  }
+}

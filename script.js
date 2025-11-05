@@ -1,10 +1,26 @@
-const age = 12;
-console.log(age);
-if(age>= 18) {
-    console.log("vous etes majeur");
-} else { // else=sinon possibilité de combiné else et if 
-    console.log("vous etes mineur");
-}
+const burger = document.getElementById('burger');// les constantes permettent de cibler les elements à "modifier"
+const nav = document.getElementById('menu');
+const closeBtn = document.querySelector('#menu .close-btn'); //getelementbyID pour selection un seul element par l  ID et queryselector peut selectionner plusieurs elements ID class etc
+
+burger.addEventListener('click', () => {
+  //bascule la classe "open"
+  nav.classList.toggle('open');
+
+  //si la nav est ouverte → cache le burger
+  if (nav.classList.contains('open')) {
+    burger.style.display = 'none';
+  } else {
+    //si la nav est fermée → réaffiche le burger
+    burger.style.display = 'flex';
+  }
+});
+
+// interaction fermeture menu burger
+closeBtn.addEventListener('click', () => {
+  nav.classList.remove('open');   // enlève ouvert la nav repasse à display:none (via CSS)
+  burger.style.display = 'flex';  // burger revient on met flex et pas block car le burger est un "texte" span
+});
 
 
-//ne pas tenir compte de ce code
+
+

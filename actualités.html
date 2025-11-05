@@ -9,24 +9,30 @@
 <body>
 
 <!-- HEADER/nav -->
-  <header class="header">
-    <div class="logo">Agenc<em>eco</em></div>
-    <nav class="nav">
-      <a href="#accueil">Accueil</a>
-      <a href="#notre_equipe">Notre équipe</a>
-      <a href="nos_services">Nos services</a>
-      <a href="#temoignage">Témoignages</a>
-      <a href="#contactez_nous">Contactez-nous</a>
-      <a href="actualites">Actualités</a>
-    </nav>
-  </header>
+   <header class="header">
+      <div class="logo">Agenc<em>eco</em></div>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="nav" id="menu">
+        <a href="index.html">Accueil</a>
+        <a href="#ancre_notre_equipe">Notre équipe</a>
+        <a href="#ancre_nos_serv">Nos services</a>
+        <a href="#temoignage">Témoignages</a>
+        <a href="#ancre_contactez_nous">Contactez-nous</a>
+        <a href="#ancre_actualités">Actualités</a>
+        <button class="close-btn">×</button>
+      </nav>
+    </header>
 
   <section class="add_actu">
     <div class="titre_actu">
         <h2>Nos actualités</h2>
     </div>
-    <div class="sous_titre_actu">
-        <h3>Ajouter une actualité</h3>
+    <div class="btn_add_actu">
+        <button type="button">Ajouter une actualité</button>
     </div>
     
 <!-- BlOCK1 -->
@@ -126,7 +132,7 @@
 
   <!-- FOOTER PART1 -->
 
-  <section class="footer_part1">
+  <section class="footer_part1 conteneur_grid">
   <!-- C1 -->
     <div class="txt_colonne1">
       <div class="content">
@@ -167,7 +173,7 @@
      </div>
 
     <!-- C5+icones -->
-    <div class="ensemble"> 
+    <div class="ensemble box1"> 
       <div class="tel_adresse">
         <div class="ligne_tel">
           <div class="icone_tel">
@@ -195,17 +201,17 @@
   </section>  
 
     <!-- FOOTER PART2 -->
-  <div class="footer_part2">
+  <div class="footer_part2 conteneur_grid2">
     
-      <div class="copyright">
+      <div class="copyright fbox1">
         <p>Copyright © 2021 AGENCECO - All rights reserved</p>
       </div>
 
-      <div class="me_connecter">
+      <div class="me_connecter fbox2">
           <button type="submit">Me connecter</button>
       </div>
 
-      <div class="icones_reseau">
+      <div class="icones_reseau fbox3">
         <div class="icone_fb">
           <img class="facebook" src="images/icone_fb.png" alt="facebook">
         </div>
@@ -216,9 +222,7 @@
           <img class="insta" src="images/icone_ista.png" alt="insta">
         </div>
       </div>
-    
-
-
-    </div>   
+    </div>
+    <script src="script.js"></script>   
 </body>
 </html>
