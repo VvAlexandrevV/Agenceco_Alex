@@ -4,6 +4,7 @@
   /* le * cible tout le document */
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 /* GLOBAL */
@@ -26,6 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
+  z-index: 10000;
 }
 
 .logo {
@@ -134,10 +136,13 @@ body {
 }
 
 .photo_equipe {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  gap: 30%;
+  gap: 13%;
   padding-top: 2%;
+  margin: auto;
+  width: 94%;
 }
 
 .FemmeRouge {
@@ -299,6 +304,11 @@ body {
 }
 
 /*FORMULAIRE*/
+input,
+textarea {
+  color: white; /* couleur texte saisi */
+}
+
 .champ{
   background-color: transparent;
   border:none;
@@ -475,15 +485,29 @@ body {
   text-align: center;
 }
 
-.photos_galerie {
+.slider {
+ width: 80%;
+ max-width: 1150px;
+ max-height: 768px;
+ overflow: hidden;
  display: flex;
- justify-content: center;
- margin-top: 5%;
+ flex-direction: row;
+ margin: auto;
+ margin-top: 3%;
+ border-radius: 20px;
 }
 
-.photos_galerie img {
-  border-radius: 20px;
+.slides {
+ display: flex;
+ transition: 0.5s;
+ width: 100%; 
 }
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
 
 /*==boutons==*/
 .boutons_galerie {
@@ -553,13 +577,14 @@ body {
   white-space: nowrap;
   margin-right: 5%;
   gap: 10px;
-
 }
+
 
 .icone_tel img, 
 .icone_GPS img {
   width: 70px;
   display: block;
+  min-width: 70px;
 }
 
 .txt_tel,
@@ -570,14 +595,15 @@ body {
 }
 
  /*FOOTER PART2*/
-.footer_part2 {
+.footer_part2_iso {
  background-color: #0c2227;
  color: #ffffff;
  width: 100%;
  display: flex;
  flex-direction: row;
  justify-content: center;
- gap: 24%;
+ gap: 25%;
+ 
 
 }
 
@@ -610,6 +636,7 @@ body {
   gap: 50px;
   margin-top: 70px;
   margin-bottom: 40px;
+  margin-right: 3%;
 }
 
 .icones_reseau div { /* conteneur de chaque icône */
@@ -619,8 +646,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 5%; 
-  height: 13%;              
+  width: 10%; 
+  aspect-ratio: 1;             
   margin-bottom: 40px;
 }
 
@@ -629,6 +656,9 @@ body {
   height: 25px;
   object-fit: contain;
 }
+
+
+
 
 
 
@@ -661,7 +691,7 @@ body {
   #champ_email_log input::placeholder,
   #mot_de_pass input::placeholder {
     color: #868686;
-    font-family: "poppins" sans-serif;
+    font-family: "poppins", sans-serif;
   }
 
   #champ_email_log,
@@ -706,14 +736,14 @@ body {
   }
 
 
-.footer_part2_p2 {
+.footer_part2 {
  background-color: #0c2227;
  color: #ffffff;
  width: 100%;
  display: flex;
  flex-direction: row;
  justify-content: space-between; /*pousse les icone a droite et le copyright a gauche*/
- gap: 24%;
+ gap: 20%;
 
 }
 
@@ -722,7 +752,6 @@ body {
   font-size: 15px;
   margin-top: 70px;
   margin-left: 15%;
-  
 }
 
 
@@ -733,6 +762,12 @@ body {
   margin-bottom: 40px;
   margin-right: 15%;
 }
+
+.fbox1 {
+  margin-left: 2%;
+}
+ 
+  
 
 .icones_reseau_p2 div { /* conteneur de chaque icône */
   border: 2px solid #ffffff;
@@ -883,6 +918,10 @@ bottom: 15%;
     background-color: #ffaa00;
     color: #c8ff00;
   }
+
+.hid_resp_deskop {
+  display: none;
+}
 
 
 
@@ -1265,17 +1304,14 @@ text-align: center;
   text-align: center;
 }
 
-.photos_galerie {
-  width: 100%;
-  height: 60vw;
-  max-width: 100%;
-  margin-top: 15%;
-  margin-bottom: 5%;
+.slider {
+  overflow: hidden;
+  width: 80%;
+  margin-bottom: 3%;
 }
 
-.photos_galerie {
-  width: 100%;
-  overflow: hidden;
+.slide img {
+  border-radius: 20px;
 }
 
 .boutons_galerie {
@@ -1307,6 +1343,13 @@ text-align: center;
   grid-template-rows: 1fr 1fr 3fr;
 }
 
+.content,
+.informations,
+.services,
+.aide {
+  font-size: clamp(4vw, 1vw, 4vw);
+  }
+
 .box1 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -1317,7 +1360,6 @@ text-align: center;
 .txt_colonne1 {
   margin-left: 15%;
 }
-
 
 .conteneur_grid2 {
   display: grid;
@@ -1331,7 +1373,11 @@ text-align: center;
   grid-column-start: 2;
   grid-row-start: 2 ;
   justify-content: center;
-  margin-top: 0;
+  margin-top: 0%;
+}
+
+.fbox3_bis {
+  margin-top: 5%;
 }
 
 .fbox1 {
@@ -1402,7 +1448,12 @@ text-align: center;
 
 .date_actu {
   display: none;
-} 
+}
+
+.hid_resp_deskop {
+  display: flex;
+  margin: auto;
+}
 
 
 
