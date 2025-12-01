@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgencEco - Modifier une actualité</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
         <a href="index.html #ancre_nos_serv">Nos services</a>
         <a href="#temoignage">Témoignages</a>
         <a href="index.html #ancre_contactez_nous">Contactez-nous</a>
-        <a href="index.html#ancre_actualités">Actualités</a>
+        <a href="index.html#ancre_actualites">Actualités</a>
         <button class="close-btn">×</button>
       </nav>
     </header>
@@ -36,23 +36,23 @@
   <section class="form_add_actu2">
     <div class="cadre_form">
         <div class="form_add_actu">
-            <form id="ajouter_actu" action="pagex" method="post">
+            <form id="ajouter_actu">
                 <div>
                     <input type="text" name="titre_de_mon_actualite" id="champ_titre_actu2" placeholder="Le titre de mon actualité">   
                 </div>
                 <div>
-                    <textarea name="description" id="champ_description" placeholder="Sa description"></textarea>
+                    <textarea name="description" id="champ_description2" placeholder="Sa description"></textarea>
                 </div>
                 <div>
-                    <textarea name="son_contenu" id="champ_contenu" placeholder="Son contenu"></textarea>
+                    <textarea name="son_contenu" id="champ_contenu2" placeholder="Son contenu"></textarea>
                 </div>              
 <!-- boutton MAJ/SUPPRIMER -->
               <div class="bouton_maj_sup">
                 <div class="bouton_maj">
-                    <button type="submit">Mettre à jour</button>
+                    <button type="submit" id="btn-maj">Mettre à jour</button>
                 </div>
                 <div class="bouton_supprimer">
-                    <button type="submit">Supprimer</button>
+                    <button type="button" id="btn-delete">Supprimer</button>
                 </div>
               </div>  
             </form>   
@@ -148,7 +148,9 @@
           </div>
         </div>  
     </div>
-<script src="burger.js"></script>    
+ <script src="js/auth.js"></script>
+ <script src="js/modifActus.js"></script>   
+<script src="js/burger.js"></script>    
 </body>
 </html>      
     

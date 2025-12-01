@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgencEco - Accueil</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- HEADER/nav -->
@@ -21,7 +21,7 @@
         <a href="#ancre_nos_serv">Nos services</a>
         <a href="#temoignage">Témoignages</a>
         <a href="#ancre_contactez_nous">Contactez-nous</a>
-        <a href="#ancre_actualités">Actualités</a>
+        <a href="#ancre_actualites">Actualités</a>
         <button class="close-btn">×</button>
       </nav>
     </header>
@@ -55,7 +55,7 @@
         </div>
 
         <div class="txt_homme2">
-          <img class="homme2" src="images/homme2.jpg" alt="homme_noir">
+          <img class="homme2" src="images/homme2.jpg" alt="homme_2">
           <h2 class="nom_noir">Romeo Sylla</h2>
           <p>Adipiscing elit. Donec sed leo in nisi vehicula bibendum</p>
         </div>
@@ -114,7 +114,7 @@
       </div>
     </section>
 
-    <!-- DERNIERES ACTUALITES -->
+    <!-- DERNIERES ACTUALITES // blocks 1, 2 et 3 pas de texte! le texte est geré par l API dans actualites.js--> 
 
     <!-- Block1 -->
     <section class="dernieres_actualites">
@@ -123,34 +123,34 @@
       </div>
       <div class="block1">
         <div class="titre_block1">
-          <p>Le titre de mon actualité</p>
+          <p id="titre1"></p>
         </div>
         <div class="txt_block1">
-          <p>05/04/2023</p>
-          <p>La description de l'actualité</p>
-          <p>Le contenu de l'actualité</p>
+          <p id="date1"></p>
+          <p id="description1"></p>
+          <p id="contenu1"></p>
         </div>
       </div>
       <!-- BLOCK2 -->
       <div class="block2">
         <div class="titre_block2">
-          <p>Le titre de mon actualité</p>
+          <p id="titre2"></p>
         </div>
         <div class="txt_block2">
-          <p>05/04/2023</p>
-          <p>La description de l'actualité</p>
-          <p>Le contenu de l'actualité</p>
+          <p id="date2"></p>
+          <p id="description2"></p>
+          <p id="contenu2"></p>
         </div>
       </div>
       <!-- BLOCK3 -->
       <div class="block3">
         <div class="titre_block3">
-          <p>Le titre de mon actualité</p>
+          <p id="titre3"></p>
         </div>
         <div class="txt_block3">
-          <p>05/04/2023</p>
-          <p>La description de l'actualité</p>
-          <p>Le contenu de l'actualité</p>
+          <p id="date3"></p>
+          <p id="description3"></p>
+          <p id="contenu3"></p>
         </div>
       </div>
     </section>
@@ -364,7 +364,9 @@
         </div>
 
         <div class="me_connecter fbox2">
-          <button type="submit">Me connecter</button>
+
+          <button onclick="location.href='connexion.html'">me connecter</button>
+
         </div>
 
         <div class="icones_reseau fbox3">
@@ -379,8 +381,8 @@
           </div>
         </div>  
     </div>
-
-    <script src="script.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>    
     

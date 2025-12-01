@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AgencEco - connexion</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- HEADER/nav -->
@@ -21,7 +21,7 @@
         <a href="index.html #ancre_nos_serv">Nos services</a>
         <a href="#temoignage">Témoignages</a>
         <a href="index.html #ancre_contactez_nous">Contactez-nous</a>
-        <a href="index.html#ancre_actualités">Actualités</a>
+        <a href="index.html#ancre_actualites">Actualités</a>
         <button class="close-btn">×</button>
       </nav>
     </header>
@@ -36,10 +36,10 @@
       <div class="formulaire_log">
         <form id="form_log" action="pagex" method="post">
           <div>
-            <input type="email" name="email" id="champ_email_log" placeholder="E-mail">
+            <input type="email" name="email" id="champ_email_log" class="email_color" placeholder="E-mail" required>
           </div>
           <div>
-            <input type="password" name="mot_de_passe" id="mot_de_pass" placeholder="Mot de passe">    
+            <input type="password" name="mot_de_passe" id="mot_de_pass" class="mdp_color" placeholder="Mot de passe" required>    
           </div>
           <div class="me_connecter2">
             <button type="submit">Me connecter</button>
@@ -136,7 +136,8 @@
         </div>
       </div>
     </div>
-    <script src="burger.js"></script>
+    <script src="js/connexion.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>    
       

@@ -7,7 +7,7 @@ const closeBtn = document.querySelector('#menu .close-btn'); //getelementbyID po
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const slides =document.getElementById('slides');
-const nombreSlide = slides.children.length; //length permet de compte le nombre d enfants (les img dans ce cas) dans le slides
+const nombreSlide = slides.children.length; //length permet de compter le nombre d enfants (les img dans ce cas) dans le slides
 
 //CODE MENU BURGER
 burger.addEventListener('click', () => {
